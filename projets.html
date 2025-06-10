@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sèkplon Mirabel DOTOU - Développeur Web/Mobile & Designer Graphique</title>
+    <meta name="description" content="Portfolio de Sèkplon Mirabel DOTOU, développeur Web/Mobile et designer graphique à Cotonou, Bénin. Découvrez ses projets, compétences et contactez-le.">
+    <meta property="og:title" content="Sèkplon Mirabel DOTOU - Développeur Web/Mobile & Designer Graphique">
+    <meta property="og:description" content="Portfolio de Sèkplon Mirabel DOTOU, développeur web et designer graphique à Cotonou, Bénin.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="./images/favicon.ico">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="./index.php">Sèkplon Mirabel DOTOU</a>
+            
+            <div class="d-flex align-items-center order-lg-2">
+                <button class="btn theme-toggle me-2" onclick="toggleTheme()" aria-label="Changer le thème">
+                    <i class="bi bi-moon-stars" id="theme-icon"></i>
+                </button>
+                <button class="btn lang-toggle me-3" onclick="toggleLanguage()" aria-label="Changer la langue">
+                    <span id="lang-text">EN</span>
+                </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            
+            <div class="collapse navbar-collapse order-lg-1" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="./index.php#home" data-fr="Accueil" data-en="Home">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.php#about" data-fr="À propos" data-en="About">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.php#projects" data-fr="Projets" data-en="Projects">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.php#skills" data-fr="Compétences" data-en="Skills">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.php#cv" data-fr="CV" data-en="Resume">CV</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.php#contact" data-fr="Contact" data-en="Contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row justify-content-center align-items-center text">
+                <div class="col-lg-8 hero-content" data-aos="fade-up">
+                    <h1 class="hero-title text-center">Mes différents Projets </h1>
+                    <p class="hero-subtitle text-center my-3" data-fr="Développeur Web/Mobile & Designer Graphique Passionné" data-en="Passionate Web Developer & Graphic Designer">
+                        Développeur Web/Mobile & Designer Graphique Passionné
+                    </p>
+                    <p class="lead text-center py-3" style="max-width:700px;margin:0 auto;">
+                        Découvrez ici une sélection de mes réalisations en développement web, mobile et design graphique. Chaque projet reflète ma passion pour la création de solutions numériques modernes, élégantes et adaptées à vos besoins.
+                    </p>
+                    <!--p class="lead mb-4 text-center"  data-fr="Je conçois des solutions numériques élégantes et fonctionnelles pour donner vie à vos idées. Spécialisé en développement web moderne et création graphique professionnelle." data-en="I design elegant and functional digital solutions to bring your ideas to life. Specialized in modern web development and professional graphic design.">
+                        Je conçois des solutions numériques élégantes et fonctionnelles pour donner vie à vos idées. Spécialisé en développement web moderne et création graphique professionnelle.
+                    </p-->
+                    <div class="d-flex flex-wrap gap-3 justify-content-center">
+                        <a href="#modalGraph" class="btn btn-primary" data-fr="Galerie" data-en="Gallery">
+                            <i class="bi bi-eye me-2"></i>Galerie
+                        </a>
+                        <a href="#modalDev" class="btn btn-outline-primary" data-fr="Projets" data-en="Projects">
+                            <i class="bi bi-palette me-2"></i>Projets 
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <div class="px-0" id="modalDev" >
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalDevLabel">
+                        <i class="bi bi-code-slash me-2"></i>
+                        Projets Développement Web/Mobile
+                    </h5>
+                    
+                </div>
+                <div class="modal-body">
+                    <div class="project-item">
+                        <h6><i class="bi bi-person-badge me-2 text-primary"></i>Mon Portfolio Personnel</h6>
+                        <p>Site vitrine responsive développé avec HTML5, CSS3, JavaScript et Bootstrap. Intègre des animations modernes et une interface utilisateur optimisée.</p>
+                        <div class="d-flex flex-wrap gap-2 mb-2">
+                            <span class="badge bg-primary">HTML5</span>
+                            <span class="badge bg-info">CSS3</span>
+                            <span class="badge bg-warning">JavaScript</span>
+                            <span class="badge bg-success">Bootstrap</span>
+                        </div>
+                        <a href="https://github.com/miraboy/portfolio" target="_blank" class="btn btn-dark btn-sm mt-2">
+                            <i class="bi bi-github"></i> Voir sur GitHub
+                        </a>
+                    </div>
+
+                    <div class="project-item">
+                        <h6><i class="bi bi-building me-2 text-primary"></i>Application de gestion d’entreprise</h6>
+                        <p>
+                            Application web de gestion d’entreprise, intuitive et responsive, avec interface dynamique, navigation fluide et fonctionnalités CRUD complètes.
+                        </p>
+                        <div class="d-flex flex-wrap gap-2 mb-2">
+                            <span class="badge bg-primary">PHP (MVC, POO)</span>
+                            <span class="badge bg-secondary">MySQL</span>
+                            <span class="badge bg-primary">HTML5</span>
+                            <span class="badge bg-info">CSS3</span>
+                            <span class="badge bg-warning">JavaScript</span>
+                            <span class="badge bg-dark">jQuery</span>
+                            <span class="badge bg-success">Bootstrap 5</span>
+                            <span class="badge bg-info text-dark">DataTables</span>
+                        </div>
+                        <a href="https://github.com/miraboy/filrouge" target="_blank" class="btn btn-dark btn-sm mt-2">
+                            <i class="bi bi-github"></i> Voir sur GitHub
+                        </a>
+                    </div>
+
+                    <div class="project-item">
+                        <h6><i class="bi bi-box me-2 text-primary"></i>Socle backend PHP modulaire</h6>
+                        <p>
+                            Socle backend léger, modulaire et réutilisable, conçu pour démarrer rapidement des back-offices ou APIs sans framework lourd. Fournit des classes prêtes à l’emploi pour la validation, la gestion de données (SCRUD) et l’authentification.
+                        </p>
+                        <div class="d-flex flex-wrap gap-2 mb-2">
+                            <span class="badge bg-primary">PHP (POO)</span>
+                            <span class="badge bg-secondary">MySQL</span>
+                            <span class="badge bg-dark">Sans framework</span>
+                        </div>
+                        <a href="https://github.com/miraboy/modeles" target="_blank" class="btn btn-dark btn-sm mt-2">
+                            <i class="bi bi-github"></i> Voir sur GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>    
+
+    <div class="px-0" id="modalGraph">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalGraphLabel">
+                        <i class="bi bi-palette me-2"></i>
+                        Galerie de Créations Graphiques
+                    </h5>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center mb-4">
+                        <p class="lead">Découvrez une sélection de mes réalisations graphiques, alliant créativité et professionnalisme.</p>
+                    </div>
+
+                    <div id="gallery-grid" class="gallery-grid row"></div>
+
+                    <nav aria-label="Pagination Galerie" class="mt-4">
+                        <ul class="pagination justify-content-center" id="gallery-pagination"></ul>
+                    </nav>
+
+                    <div class="text-center mt-4">
+                        <p class="text-muted">
+                            <i class="bi bi-lightbulb me-2"></i>
+                            Chaque création est unique et adaptée aux besoins spécifiques du client
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-dark text-dark text-dark text-dark text-dark text-dark text-dark text-dark text-dark text-dark text-dark text-dark" data-fr="Contactez-moi" data-en="Contact Me">Contactez-moi</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div id="form-message" class="text-center my-3"></div>
+                    <div class="contact-form" data-aos="fade-up">
+                        <form id="contactForm" method="POST" action="send_mail.php" autocomplete="off">
+                            <input type="text" name="website" id="website" class="d-none" tabindex="-1" autocomplete="off">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label" data-fr="Nom complet" data-en="Full Name">Nom complet</label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label" data-fr="Adresse email" data-en="Email Address">Adresse email</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="subject" class="form-label" data-fr="Sujet" data-en="Subject">Sujet</label>
+                                    <input type="text" class="form-control" id="subject" name="subject" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="message" class="form-label" data-fr="Message" data-en="Message">Message</label>
+                                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg" aria-label="Envoyer le message">
+                                        <i class="bi bi-send me-2"></i>
+                                        <span data-fr="Envoyer le message" data-en="Send Message">Envoyer le message</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="row g-4 mt-4">
+                        <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card p-3">
+                                <i class="bi bi-envelope text-primary mb-3" style="font-size: 2rem;"></i>
+                                <h5 data-fr="Email" data-en="Email">Email</h5>
+                                <p class="mb-0">mirabelbarryl@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="200">
+                            <div class="card p-3">
+                                <i class="bi bi-phone text-primary mb-3" style="font-size: 2rem;"></i>
+                                <h5 data-fr="Téléphone" data-en="Phone">Téléphone</h5>
+                                <p class="mb-0">+229 01 52 68 52 98</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="300">
+                            <div class="card p-3">
+                                <i class="bi bi-geo-alt text-primary mb-3" style="font-size: 2rem;"></i>
+                                <h5 data-fr="Localisation" data-en="Location">Localisation</h5>
+                                <p class="mb-0">Pahou, Bénin</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-4">
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/s%C3%A8kplon-mirabel-dotou-410140195?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://github.com/miraboy" target="_blank" title="GitHub"><i class="bi bi-github"></i></a>
+                            <a href="mailto:mirabelbarryl@gmail.com" title="Email"><i class="bi bi-envelope"></i></a>
+                            <a href="https://x.com/MirabelDotou?t=2pK8_bDFiTHUH93PoW3Law&s=09" target="_blank" title="Twitter"><i class="bi bi-twitter"></i></a>
+                            <a href="https://www.facebook.com/share/1AkuytcL21/" target="_blank" title="Facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="https://wa.me/2290152685298" target="_blank" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0" data-fr="© 2024 Sèkplon Mirabel DOTOU. Tous droits réservés." data-en="© 2024 Sèkplon Mirabel DOTOU. All rights reserved.">
+                        © 2025 Sèkplon Mirabel DOTOU. Tous droits réservés.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0" data-fr="Développeur Web/Mobile & Designer Graphique - Pahou, Bénin" data-en="Web Developer & Graphic Designer - Cotonou, Benin">
+                        Développeur Web/Mobile & Designer Graphique - Pahou, Bénin
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+    <script src="js/gallery-pagination.js"></script>
+</body>
+</html>

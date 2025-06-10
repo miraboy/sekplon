@@ -8,7 +8,7 @@
     <meta property="og:title" content="Sèkplon Mirabel DOTOU - Développeur Web/Mobile & Designer Graphique">
     <meta property="og:description" content="Portfolio de Sèkplon Mirabel DOTOU, développeur web et designer graphique à Cotonou, Bénin.">
     <meta property="og:type" content="website">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="./images/favicon.ico">
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
@@ -74,12 +74,12 @@
                     <img src="images/moi.jpg" alt="Sèkplon Mirabel DOTOU" class="img-fluid rounded m-3" style="max-width: 300px;width:100%;height:auto;object-fit:contain;display:block;">
                 </div>
             </div>
-        </section>
+    </section>
 
     <!-- About Section -->
     <section id="about" class="py-5">
         <div class="container">
-            <h2 class="section-title" data-fr="À propos de moi" data-en="About Me">À propos de moi</h2>
+            <h2 class="section-title text-dark" data-fr="À propos de moi" data-en="About Me">À propos de moi</h2>
             <div class="row align-items-center">
                 
                 <div class="col-lg-6" data-aos="fade-right">
@@ -132,12 +132,12 @@
         </div>
         
         <div class="container position-relative" style="z-index: 2;">
-            <h2 class="section-title" data-fr="Mes Projets" data-en="My Projects">Mes Projets</h2>
+            <h2 class="section-title text-light" data-fr="Mes Projets" data-en="My Projects">Mes Projets</h2>
             
             <div class="row g-4 justify-content-center">
                 <!-- Développement Web Card -->
-                <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-duration="400">
-                    <div class="project-card" role="button" data-bs-toggle="modal" data-bs-target="#modalDev">
+                <div class="col-lg-5 col-md-6">
+                    <div class="project-card" role="button" onclick="window.location.href='projets.html'">
                         <div class="project-icon">
                             <i class="bi bi-code-slash"></i>
                         </div>
@@ -162,8 +162,8 @@
                 </div>
 
                 <!-- Conception Graphique Card -->
-                <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-duration="400" data-aos-delay="200">
-                    <div class="project-card" role="button" data-bs-toggle="modal" data-bs-target="#modalGraph">
+                <div class="col-lg-5 col-md-6">
+                    <div class="project-card" role="button" onclick="window.location.href='projets.html'">
                         <div class="project-icon">
                             <i class="bi bi-palette"></i>
                         </div>
@@ -308,12 +308,10 @@
         </div>
     </section>
 
-
-
     <!-- Skills Section -->
     <section id="skills" class="py-5">
         <div class="container">
-            <h2 class="section-title" data-fr="Mes Compétences" data-en="My Skills">Mes Compétences</h2>
+            <h2 class="section-title text-dark" data-fr="Mes Compétences" data-en="My Skills">Mes Compétences</h2>
             <div class="row">
                 <!-- Bloc Développement Web -->
                 <div class="col-lg-6" data-aos="fade-right">
@@ -470,7 +468,7 @@
     <!-- CV Section -->
     <section id="cv" class="py-5 bg-light">
         <div class="container">
-            <h2 class="section-title" data-fr="Mon CV" data-en="My Resume" style="color: #222 !important;text-shadow: 0 1px 0 #fff, 0 2px 8px rgba(0,0,0,0.08);">Mon CV</h2>
+            <h2 class="section-title text-dark" data-fr="Mon CV" data-en="My Resume" style="color: #222 !important;text-shadow: 0 1px 0 #fff, 0 2px 8px rgba(0,0,0,0.08);">Mon CV</h2>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="cv-section" data-aos="fade-up">
@@ -543,7 +541,7 @@
     <!-- Contact Section -->
     <section id="contact" class="py-5">
         <div class="container">
-            <h2 class="section-title" data-fr="Contactez-moi" data-en="Contact Me">Contactez-moi</h2>
+            <h2 class="section-title text-dark" data-fr="Contactez-moi" data-en="Contact Me">Contactez-moi</h2>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div id="form-message" class="text-center my-3"></div>
@@ -617,7 +615,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer bg-light py-4">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6">
