@@ -1,10 +1,8 @@
 <?php
-// filepath: c:\xampp\htdocs\portfolio\send_mail.php
-
 header('Content-Type: application/json');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Honeypot anti-spam
+    // Anti-spam "honeypot"
     if (!empty($_POST['website'])) {
         echo json_encode([
             'success' => false,
@@ -26,12 +24,29 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit;
     }
 
-    $to = "mirabelbarryl@gmail.com";
-    $mail_subject = "Portfolio - $subject";
-    $body = "Nom: $name\nEmail: $email\n\nMessage:\n$message";
-    $headers = "From: $name <$email>\r\nReply-To: $email";
+    // Adresse du destinataire (ton email de réception)
+    $to = "contact@sekplon.com";
 
-    if (mail($to, $mail_subject, $body, $headers)) {
+    // Sujet de l'email
+    $mail_subject = "Portfolio - $subject";
+
+    // Corps du message
+    $body = "Nom : $name\nEmail : $email\n\nMessage :\n$message";
+
+    // Adresse expéditrice (doit exister et être sur ton domaine !)
+    $from_email = "contact@sekplon.com";
+
+    // En-têtes email
+    $headers = [];
+    $headers[] = "From: Portfolio <$from_email>";
+    $headers[] = "Reply-To: $email";
+    $headers[] = "Return-Path: $from_email";
+    $headers[] = "MIME-Version: 1.0";
+    $headers[] = "Content-Type: text/plain; charset=UTF-8";
+    $headers_str = implode("\r\n", $headers);
+
+    // Envoi de l'email
+    if (mail($to, $mail_subject, $body, $headers_str, "-f $from_email")) {
         echo json_encode([
             'success' => true,
             'message' => "Votre message a bien été envoyé. Merci !"
