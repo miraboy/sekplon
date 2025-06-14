@@ -39,7 +39,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
             col.innerHTML = `
                 <div class="gallery-item h-100 d-flex flex-column justify-content-end w-100 position-relative" data-aos="zoom-in" data-aos-delay="100" style="cursor:pointer;">
-                    <img src="./images/${imgName}" alt="Projet graphique" class="img-fluid gallery-thumb" style="width:100%;height:auto;object-fit:contain;display:block;">
+                <img src="./images/${imgName}"
+                    alt="Création graphique Mirabel - /${imgName}"
+                    title="Création graphique Mirabel - ${imgName}"
+                    class="img-fluid gallery-thumb"
+                    loading="lazy"
+                    style="width:100%;height:auto;object-fit:contain;display:block;">
+
                     <div class="gallery-overlay d-flex align-items-center justify-content-center" style="position:absolute;top:0;left:0;right:0;bottom:0;opacity:0;transition:opacity 0.3s;background:rgba(0,0,0,0.45);">
                         <span class="text-white fw-bold" style="font-size:1.1rem;"><i class="bi bi-arrows-fullscreen me-2"></i>Voir en grand</span>
                     </div>
