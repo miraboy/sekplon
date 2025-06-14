@@ -17,6 +17,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <meta name="keywords" content="Sèkplon, DOTOU ,Mirabel, Sèkplon Mirabel DOTOU, développeur mobile, développeur web, designer graphique, portfolio, projets, Bénin, Cotonou, Pahou, web, mobile, graphisme, création, design, PHP, HTML, CSS, JavaScript, Bootstrap, MySQL">
 </head>
 <body>
     <!-- Navigation -->
@@ -61,12 +62,26 @@
                     <p class="lead mb-4" data-fr="Je conçois des solutions numériques élégantes et fonctionnelles pour donner vie à vos idées. Spécialisé en développement web moderne et création graphique professionnelle." data-en="I design elegant and functional digital solutions to bring your ideas to life. Specialized in modern web development and professional graphic design.">
                         Je conçois des solutions numériques élégantes et fonctionnelles pour donner vie à vos idées. Spécialisé en développement web moderne et création graphique professionnelle.
                     </p>
-                    <div class="d-flex flex-wrap gap-3">
-                        <a href="#projects" class="btn btn-primary" data-fr="Voir mes projets" data-en="View My Projects">
-                            <i class="bi bi-eye me-2"></i>Voir mes projets
+                    <div class="d-flex flex-wrap gap-3 justify-content-center">
+                        <a href="#modalDev"
+                           class="btn btn-primary"
+                           data-bs-toggle="modal"
+                           data-fr="Voir mes projets"
+                           data-en="View My Projects"
+                           title="Voir les projets de Mirabel"
+                           aria-label="Voir les projets de Mirabel">
+                            <i class="bi bi-eye me-2" aria-hidden="true"></i>
+                            Voir mes projets
                         </a>
-                        <a href="#contact" class="btn btn-outline-primary" data-fr="Me contacter" data-en="Contact Me">
-                            <i class="bi bi-envelope me-2"></i>Me contacter
+                        <a href="#modalGraph"
+                           class="btn btn-outline-primary"
+                           data-bs-toggle="modal"
+                           data-fr="Galerie graphique"
+                           data-en="Gallery"
+                           title="Galerie graphique de Mirabel"
+                           aria-label="Galerie graphique de Mirabel">
+                            <i class="bi bi-palette me-2" aria-hidden="true"></i>
+                            Galerie graphique
                         </a>
                     </div>
                 </div>
@@ -210,8 +225,10 @@
                                 <span class="badge bg-warning">JavaScript</span>
                                 <span class="badge bg-success">Bootstrap</span>
                             </div>
-                            <a href="https://github.com/miraboy/portfolio" target="_blank" class="btn btn-dark btn-sm mt-2">
-                                <i class="bi bi-github"></i> Voir sur GitHub
+                            <a href="https://github.com/miraboy/portfolio" target="_blank" class="btn btn-dark btn-sm mt-2"
+                               title="Voir le projet Mirabel sur GitHub"
+                               aria-label="Voir le projet Mirabel sur GitHub">
+                                <i class="bi bi-github" aria-hidden="true"></i> Voir sur GitHub
                             </a>
                         </div>
 
@@ -230,8 +247,10 @@
                                 <span class="badge bg-success">Bootstrap 5</span>
                                 <span class="badge bg-info text-dark">DataTables</span>
                             </div>
-                            <a href="https://github.com/miraboy/filrouge" target="_blank" class="btn btn-dark btn-sm mt-2">
-                                <i class="bi bi-github"></i> Voir sur GitHub
+                            <a href="https://github.com/miraboy/filrouge" target="_blank" class="btn btn-dark btn-sm mt-2"
+                               title="Voir le projet Mirabel sur GitHub"
+                               aria-label="Voir le projet Mirabel sur GitHub">
+                                <i class="bi bi-github" aria-hidden="true"></i> Voir sur GitHub
                             </a>
                         </div>
 
@@ -245,8 +264,10 @@
                                 <span class="badge bg-secondary">MySQL</span>
                                 <span class="badge bg-dark">Sans framework</span>
                             </div>
-                            <a href="https://github.com/miraboy/modeles" target="_blank" class="btn btn-dark btn-sm mt-2">
-                                <i class="bi bi-github"></i> Voir sur GitHub
+                            <a href="https://github.com/miraboy/modeles" target="_blank" class="btn btn-dark btn-sm mt-2"
+                               title="Voir le projet Mirabel sur GitHub"
+                               aria-label="Voir le projet Mirabel sur GitHub">
+                                <i class="bi bi-github" aria-hidden="true"></i> Voir sur GitHub
                             </a>
                         </div>
                     </div>
@@ -278,7 +299,7 @@
                                 for ($i=86; $i >1 ; $i--) { 
                                     ?>
                                     <div class="gallery-item h-100 d-flex flex-column justify-content-end m-3" data-aos="zoom-in" data-aos-delay="100">
-                                        <img src="./images-mini/<?php echo $i ?>.png" alt="Projet graphique n°<?php echo $i ?>" class="img-fluid" style="width:100%;height:auto;object-fit:contain;display:block;">
+                                        <img src="./images-mini/<?php echo $i ?>.png" alt="Projet graphique n°<?php echo $i ?>" title="Création graphique Mirabel - <?php echo $i ?>" class="img-fluid gallery-thumb" loading="lazy" style="width:100%;height:auto;object-fit:contain;display:block;">
                                         <div class="position-absolute bottom-0 start-0 end-0 p-3 bg-gradient text-dark">
                                             <div class="mt-2">
                                                 <a href="https://raw.githubusercontent.com/miraboy/portfolio/main/images/<?php echo $i ?>.png" target="_blank" class="btn btn-light btn-sm">
@@ -601,7 +622,13 @@
 
                     <div class="text-center mt-4">
                         <div class="social-links">
-                            <a href="https://www.linkedin.com/in/s%C3%A8kplon-mirabel-dotou-410140195?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://www.linkedin.com/in/s%C3%A8kplon-mirabel-dotou-410140195?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               title="LinkedIn Mirabel"
+                               aria-label="LinkedIn Mirabel">
+                                <i class="bi bi-linkedin" aria-hidden="true"></i>
+                            </a>
                             <a href="https://github.com/miraboy" target="_blank" title="GitHub"><i class="bi bi-github"></i></a>
                             <a href="mailto:mirabelbarryl@gmail.com" title="Email"><i class="bi bi-envelope"></i></a>
                             <a href="https://x.com/MirabelDotou?t=2pK8_bDFiTHUH93PoW3Law&s=09" target="_blank" title="Twitter"><i class="bi bi-twitter"></i></a>
