@@ -63,9 +63,9 @@
                         Je conçois des solutions numériques élégantes et fonctionnelles pour donner vie à vos idées. Spécialisé en développement web moderne et création graphique professionnelle.
                     </p>
                     <div class="d-flex flex-wrap gap-3 justify-content-center">
-                        <a href="#modalDev"
+                        <a href="#projects"
                            class="btn btn-primary"
-                           data-bs-toggle="modal"
+                       
                            data-fr="Voir mes projets"
                            data-en="View My Projects"
                            title="Voir les projets de Mirabel"
@@ -73,9 +73,9 @@
                             <i class="bi bi-eye me-2" aria-hidden="true"></i>
                             Voir mes projets
                         </a>
-                        <a href="#modalGraph"
+                        <a href="#projects"
                            class="btn btn-outline-primary"
-                           data-bs-toggle="modal"
+                         
                            data-fr="Galerie graphique"
                            data-en="Gallery"
                            title="Galerie graphique de Mirabel"
